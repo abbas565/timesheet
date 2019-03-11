@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.email {
+  grid-area: emailA;
+}
+.hours {
+  grid-area: hoursA;
+}
+.minutes {
+  grid-area: minutesA;
+}
+.message {
+  grid-area: messageA;
+}
+.workType {
+  grid-area: workTypeA;
+}
+.nextB {
+  grid-area: nextBA;
+}
+.clearB {
+  grid-area: clearBA;
+}
+.appForm {
+  margin: auto;
+  width: 500px;
+}
+/* mainForm CSS class */
+.mainForm {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 100px 100px 150px 100px 100px;
+  grid-template-areas:
+    "emailA emailA"
+    "hoursA minutesA"
+    "messageA messageA"
+    "workTypeA workTypeA"
+    "clearBA nextBA";
+}
+/* message CSS class */
+.messageInput {
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: 150px;
+}
+/* emailInput CSS class */
+.emailInput {
+  display: grid;
+  grid-template-columns: 450px 50px;
+  grid-template-rows: 70px 30px;
+  grid-template-areas:
+    "eTextFieldA eCheckA"
+    "eErrorA eErrorA";
+}
+.eTextField {
+  grid-area: eTextFieldA;
+}
+.eCheck {
+  grid-area: eCheckA;
+  align-self: center;
+  justify-self: right;
+}
+.eError {
+  grid-area: eErrorA;
+  align-self: center;
+  justify-self: left;
+  color: red;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+/* minutseInput CSS class */
+.minutseInput {
+  display: grid;
+  grid-template-columns: 200px 50px;
+  grid-template-rows: 70px 30px;
+  grid-template-areas:
+    "mTextFieldA mCheckA"
+    "mErrorA mErrorA";
+}
+.mTextField {
+  grid-area: mTextFieldA;
+}
+.mCheck {
+  grid-area: mCheckA;
+  align-self: center;
+  justify-self: right;
+}
+.mError {
+  grid-area: mErrorA;
+  align-self: center;
+  justify-self: left;
+  color: red;
+  padding-left: 10px;
+  font-size: 13px;
+}
+/* hoursInput CSS class */
+.hoursInput {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 70px 30px;
+  grid-template-areas:
+    "hTextFieldA"
+    "hErrorA";
+}
+.hTextField {
+  grid-area: hTextFieldA;
+  justify-self: left;
+}
+.hError {
+  grid-area: hErrorA;
+  align-self: center;
+  justify-self: left;
+  color: red;
+  padding-left: 10px;
+  font-size: 13px;
+}
+/* workTypeInput CSS class */
+.workTypeInput {
+  display: grid;
+  grid-template-columns: 450px 50px;
+  grid-template-rows: 70px 30px;
+  grid-template-areas:
+    "wTextFieldA wCheckA"
+    "wErrorA wErrorA";
+}
+.wTextField {
+  grid-area: wTextFieldA;
+}
+.wCheck {
+  grid-area: wCheckA;
+  align-self: center;
+  justify-self: right;
+}
+.wError {
+  grid-area: wErrorA;
+  align-self: center;
+  justify-self: left;
+  color: red;
+  padding-left: 10px;
+  font-size: 13px;
+}
+.pwError {
+  margin-top: -26px;
+}
+/* mainTitle CSS class */
+.mainTitle {
+  font-size: 30px;
+}
